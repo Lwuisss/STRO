@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stro İnşaat | İnşaat & Mimarlık</title>
+    <meta name="description" content="40 yıllık deneyimle İstanbul'un en güvenilir kentsel dönüşüm ve inşaat firması.">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Ayrı CSS Dosyamız -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header (DEĞİŞTİRİLDİ) -->
+    <header id="header">
+       <div class ="logo" >
+        <a href ="index.html"> <img src="content/head/yazi2.png" alt="Stro İnşaat" class="logo-text "></a>
+       </div>
+
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html" class="active">ANASAYFA</a></li>
+                <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                <li><a href="#">İNŞAAT & MİMARLIK</a></li>
+                <li><a href="#">KENTSEL DÖNÜŞÜM</a></li>
+                <li><a href="content/ref.pdf" target="_blank">REFERANSLAR</a></li>
+                <li><a href="#footer">İLETİŞİM</a></li>
+            </ul>
+        </nav>
+
+        <div class="phone">📞 (0212) 676 22 22</div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (DEĞİŞTİRİLDİ) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html" onclick="toggleMenu()">ANASAYFA</a></li>
+            <li><a href="hakkimizda.html" onclick="toggleMenu()">HAKKIMIZDA</a></li>
+            <li><a href="#" onclick="toggleMenu()">İNŞAAT & MİMARLIK</a></li>
+            <li><a href="#" onclick="toggleMenu()">KENTSEL DÖNÜŞÜM</a></li>
+             <li><a href="content/ref.pdf" target="_blank" onclick="toggleMenu()">REFERANSLAR</a></li>
+            <li><a href="#footer" onclick="toggleMenu()">İLETİŞİM</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Slider (DEĞİŞTİRİLDİ) -->
+    <section class="hero-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80')">
+                    <div class="slide-content">
+                        <h1>Kentsel Dönüşüm</h1>
+                        <p>Konut Projesi</p>
+                        <a href="#" class="btn primary">Projeyi İncele</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1920&q=80')">
+                    <div class="slide-content">
+                        <h1>İnşaat / Mimarlık</h1>
+                        <p>Geçmişten Bugün'e A'dan Z'ye Stro</p>
+                        <a href="#" class="btn primary">GİT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section (xxdf içeriği korunmuş) -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title">Güvenle Yükselen <span>Yaşam Alanları</span></h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <img src="content/section2/konut.png" alt="Konut">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <p>Tamamlanan Konut</p>
+                </div>
+                <div class="stat-item">
+                    <img src="content/section2/tecrube.png" alt="Tecrübe">
+                    <div class="stat-number" data-target="40">0</div>
+                    <p>Yıllık Deneyim</p>
+                </div>
+                <div class="stat-item">
+                    <img src="content/section2/kentseldonusum.png" alt="Kentsel Dönüşüm">
+                    <div class="stat-number" data-target="35">0</div>
+                    <p>Kentsel Dönüşüm Projesi</p>
+                </div>
+                <div class="stat-item">
+                    <img src="content/section2/guclendirme.png" alt="Güçlendirme">
+                    <div class="stat-number" data-target="10">0</div>
+                    <p>Bina Güçlendirme</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (xxdf içeriği korunmuş) -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/stro_insaat_mimarlik" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.youtube.com/@STROGayrimenkul" target="_blank"><i class="bi bi-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-building"></i></a>
+                    <a href="#" target="_blank"><i class="bi bi-geo-alt-fill"></i></a>
+                </div>
+                <div class="contact-info">
+                    <p><i class="bi bi-telephone-fill"></i> (0212) 676 22 22</p>
+                    <p><i class="bi bi-envelope-fill"></i> info@stroinsaat.com.tr</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> Marmara Cd. Bekir Aşçı İş Merkezi No:10 Avcılar/İstanbul</p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 Stro İnşaat Gayrimenkul. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Küçük Inline JS: Swiper init + header scroll + toggleMenu -->
+    <script>
+        // Swiper initialization (fade effect + autoplay)
+        new Swiper('.swiper', {
+            loop: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            effect: 'fade'
+        });
+
+        // Header scrolled class toggle
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 100);
+        });
+
+        // Mobile menu toggle (hamburger icon swap)
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.querySelector('.hamburger i');
+            menu.classList.toggle('active');
+            if (icon) {
+                icon.classList.toggle('bi-list');
+                icon.classList.toggle('bi-x');
+            }
+        }
+    </script>
+
+    <!-- Eğer projenin js/script.js dosyası varsa onu koru (xxdf orijinalde vardı) -->
+    <script src="js/script.js"></script>
+</body>
+</html>
